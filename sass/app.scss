@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Digital';
+    src: url('../fonts/Digital.ttf');
+}
+
+$yellow: rgb(200, 255, 0);
+
+.hidden {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+}
+
+.start-set,
+.results {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.final-text-main,
+.final-text,
+.days-done {
+    color: $yellow;
+    font-family: 'Digital';
+    font-size: 28px;
+    text-align: center;
+    padding-top: 10px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.days-left,
+.hours-left,
+.minutes-left,
+.seconds-left {
+    color: $yellow;
+    font-family: 'Digital';
+    font-size: 28px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.what-date {
+    width: 200px;
+    margin: 0 auto;
+    font-family: 'Digital';
+}
+
+.button-check,
+.button-go-out {
+    color: $yellow;
+    font-family: 'Digital';
+    background-color: #000;
+    margin-top: 20px;
+    width: 200px;
+    border-color: #000;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 auto;
+}
